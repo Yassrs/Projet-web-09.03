@@ -1,0 +1,104 @@
+/* ============================================
+   Ludothèque — Custom Styles
+   Projet Web APP 2026 - ECE ING3
+   ============================================ */
+
+:root {
+    --primary: #2563eb;
+    --primary-dark: #1e40af;
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.bg-primary {
+    background-color: var(--primary) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+}
+
+/* Card Hover Effect */
+.card-hover {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* Main Content min height */
+.main-content {
+    min-height: calc(100vh - 200px);
+}
+
+/* Table improvements */
+.table th {
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+.table td {
+    vertical-align: middle;
+}
+
+/* Badge improvements */
+.badge {
+    font-weight: 500;
+}
+
+/* Sidebar list group active */
+.list-group-item.active {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+/* Form improvements */
+.form-label {
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+
+/* Alert improvements */
+.alert {
+    border-radius: 8px;
+}
+
+/* Card border radius */
+.card {
+    border-radius: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 2rem !important;
+    }
+    .hero-section h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Footer links */
+footer a:hover {
+    color: #fff !important;
+}
+
+/* Stats cards */
+.card.text-center.p-3 {
+    border-radius: 10px;
+}
+
+/* Print styles */
+@media print {
+    .navbar, footer, .list-group, .btn { display: none !important; }
+    .main-content { min-height: auto; }
+}
